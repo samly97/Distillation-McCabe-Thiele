@@ -1,4 +1,11 @@
-function main()
+% input:
+%   Ae: Area fraction of ethanol from GC - in order from feed, distillate,
+%   and bottom
+%   T: Temperature of the feed
+%   R: Reflux ratio
+%   F: Feed flowrate (mol/time)
+%   D: Distillate flowrate (mol/time)
+function main(Ae,T,R,F,D)
     % Find paths
     Project_Folder = pwd;
     VLE = sprintf('%s/VLE Data',Project_Folder);
@@ -12,6 +19,13 @@ function main()
     % plot xy and Txy diagrams
     plot_xy()
     plot_txy()
+    
+    % McCabe Thiele
+    temp = gc2frac(Ae);
+    x = temp(:,2)';
+    temp = find_q(x(1),T);
+    q = temp(3);
+    lewis_sorel(x, R, q, F, D)
     
     % remove files created in load_vle_data()
     cleanup()
