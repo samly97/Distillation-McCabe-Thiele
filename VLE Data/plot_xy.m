@@ -6,5 +6,6 @@ function plot_xy()
     plot(x,y,'g','LineWidth',2)
     xlabel('x, Mole Fraction Ethanol')
     ylabel('y, Mole Fraction Ethanol')
-    saveas(gcf,'base_xy_1atm.png')
+    saveas(gcf,'xy diagrams/base_xy_1atm.png')
+    close(gcf)
 end
