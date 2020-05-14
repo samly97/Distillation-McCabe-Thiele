@@ -11,7 +11,7 @@ function main()
     
     % plot xy and Txy diagrams
     plot_xy()
-    %plot_txy()
+    plot_txy()
     
     % remove files created in load_vle_data()
     cleanup()
