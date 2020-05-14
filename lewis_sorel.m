@@ -16,8 +16,9 @@ function lewis_sorel(comp, R_in, q_in, F_in, D_in)
     ylabel('y, Mol Fraction Ethanol')
     title(fig_title)
     
-    file_loc = sprintf('Analysis_Figs/VLE Eth Wat 1atm R %.2f.png',R_in);
+    file_loc = sprintf('McCabe Thiele Diagrams/VLE Eth Wat 1atm R %.2f.png',R_in);
     saveas(gcf,file_loc)
+    close(gcf)
 end
 
 %%%%%%%%%%%%%
