@@ -3,4 +3,5 @@ Figures/
 Theoretical Stages/
 vol2molflow.m
 *.png
+!figure_0.png
 *.mat
