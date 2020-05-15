@@ -107,7 +107,7 @@ When running the main script, the xy and Txy diagrams are outputted. The xy diag
   
 
 
-For a subcooled liquid we expect q > 1 and q < 1 for a superheat mixture. The xy diagram at 1 atm is shown as follows:
+For a subcooled liquid we expect q > 1 and q < 1 for a superheated mixture. The xy diagram at 1 atm is shown as follows:
 
 
 
